@@ -1,0 +1,6 @@
+[template]
+src = "config.php"
+dest = "/opt/zpush/config.php"
+keys = [
+    "/tz",
+]

@@ -1,0 +1,9 @@
+[template]
+src = "imap.php"
+dest = "/opt/zpush/backend/imap/config.php"
+keys = [
+    "/imap/server",
+    "/imap/port",
+    "/smtp/server",
+    "/smtp/port"
+]

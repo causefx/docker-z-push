@@ -4,9 +4,7 @@ set -e
 echo "Starting environment..."
 confd -onetime -backend env
 
-if [ ! -d /data/state ]; then
-  mkdir /data/state
-fi
+mkdir -p /data/state /data/logs
 
 chown -R zpush:zpush /data /opt/zpush
 

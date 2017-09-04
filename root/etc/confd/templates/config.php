@@ -110,9 +110,9 @@
     $specialLogUsers = array();
 
     // Filelog settings
-    define('LOGFILEDIR', '/');
-    define('LOGFILE', '/dev/stdout');
-    define('LOGERRORFILE', '/dev/stderr');
+    define('LOGFILEDIR', '/data/logs/');
+    define('LOGFILE', LOGFILEDIR . 'z-push.log');
+    define('LOGERRORFILE', LOGFILEDIR . 'z-push-error.log');
 
     // Syslog settings
     // false will log to local syslog, otherwise put the remote syslog IP here

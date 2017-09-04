@@ -52,7 +52,7 @@ define('IMAP_SERVER', '{{getv "/imap/server"}}');
 define('IMAP_PORT', {{getv "/imap/port"}});
 
 // best cross-platform compatibility (see http://php.net/imap_open for options)
-define('IMAP_OPTIONS', '/notls/norsh');
+define('IMAP_OPTIONS', '/tls/norsh');
 
 
 // Mark messages as read when moving to Trash.

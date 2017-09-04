@@ -20,6 +20,7 @@ RUN set -ex \
   && apk add --update --no-cache \
   alpine-sdk \
   autoconf \
+  bash \
   imap \
   imap-dev \
   nginx \

@@ -20,6 +20,8 @@ RUN set -ex \
   && apk add --update --no-cache \
   alpine-sdk \
   autoconf \
+  imap \
+  imap-dev \
   nginx \
   openssl \
   openssl-dev \
@@ -35,7 +37,7 @@ RUN set -ex \
   && chmod +x /usr/local/bin/confd \
 
   # Install php
-  && docker-php-ext-configure imap --with-imap-ssl \
+  && docker-php-ext-configure imap --with-imap --with-imap-ssl \
   && docker-php-ext-install imap \
   && pecl install APCu-5.1.8 \
   && docker-php-ext-enable apcu \
@@ -44,6 +46,7 @@ RUN set -ex \
   && apk del --no-cache \
   alpine-sdk \
   autoconf \
+  imap-dev \
   openssl-dev \
   pcre-dev \
 

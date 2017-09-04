@@ -21,7 +21,7 @@ RUN set -ex \
   alpine-sdk \
   autoconf \
   imap \
-  imap-dev \ # Attention! This package is still needed after compilation. Even it's -dev.
+  imap-dev \
   nginx \
   openssl \
   openssl-dev \

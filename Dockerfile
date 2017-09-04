@@ -21,7 +21,7 @@ RUN set -ex \
   alpine-sdk \
   autoconf \
   imap \
-  imap-dev \
+  imap-dev \ # Attention! This package is still needed after compilation. Even it's -dev.
   nginx \
   openssl \
   openssl-dev \
@@ -46,7 +46,6 @@ RUN set -ex \
   && apk del --no-cache \
   alpine-sdk \
   autoconf \
-  imap-dev \
   openssl-dev \
   pcre-dev \
 

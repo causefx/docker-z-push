@@ -38,7 +38,7 @@ RUN set -ex \
 
   # Install php
   && docker-php-ext-configure imap --with-imap --with-imap-ssl \
-  && docker-php-ext-install imap \
+  && docker-php-ext-install imap pcntl \
   && pecl install APCu-5.1.8 \
   && docker-php-ext-enable apcu \
 

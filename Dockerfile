@@ -1,5 +1,5 @@
 FROM php:7.1-fpm-alpine
-MAINTAINER Simon Erhardt <hello@rootlogin.ch>
+LABEL maintainer="Simon Erhardt <hello@rootlogin.ch>"
 
 ARG ZPUSH_URL=http://download.z-push.org/final/2.3/z-push-2.3.7.tar.gz
 ARG ZPUSH_CSUM=07290996f00b988a95ff66932d2b8127

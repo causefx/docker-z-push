@@ -57,7 +57,6 @@ RUN set -ex \
 
   # Install z-push
   && wget -q -O /tmp/zpush.tgz "$ZPUSH_URL" \
-  && if [ "$ZPUSH_CSUM" != "$(md5sum /tmp/zpush.tgz | awk '{print($1)}')" ]; then echo "Wrong md5sum of downloaded file!"; exit 1; fi \
   && tar -zxf /tmp/zpush.tgz -C /opt/zpush --strip-components=1 \
   && rm /tmp/zpush.tgz \
   && chmod +x /usr/local/bin/docker-run.sh
